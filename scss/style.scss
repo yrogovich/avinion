@@ -1,0 +1,155 @@
+//import Fonts
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap');
+
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('../fonts/Gilroy-Bold.eot');
+    src: url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-Bold.woff') format('woff'),
+    url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy Regular';
+    src: url('../fonts/Gilroy-Regular.eot');
+    src: url('../fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-Regular.woff') format('woff'),
+    url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+// 12 column grid
+@import 'partials/smart-grid';
+// Normalize
+@include reset();
+
+//Vars
+$primary: #FFC700;
+
+$white: #fff;
+$black: #2E3747;
+
+$gray: #F2F3FA;
+$deep-gray:  #7C879C;
+
+$input-color: #F8F8F8;
+$input-border: #F2F3FA;
+
+// Base
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+iframe,
+figure {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Gilroy Regular', sans-serif;
+    font-size: 1.6rem;
+    margin: 0;
+    color: $black;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.container {
+    @include wrapper();
+}
+
+.container-full {
+    @include wrapper-full();
+}
+
+.img-wrapper img {
+    object-fit: cover;
+    max-height: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+img {
+    color: transparent;
+}
+
+// Burger
+.burger {
+    cursor: pointer;
+    transition: transform 400ms;
+    user-select: none;
+    z-index: 50;
+    .line {
+        fill:none;
+        transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+        stroke: $white;
+        stroke-width:5;
+        stroke-linecap:round;
+    }
+    .top {
+        stroke-dasharray: 40 82;
+    }
+    .middle {
+        stroke-dasharray: 40 111;
+    }
+    .bottom {
+        stroke-dasharray: 40 161;
+    }
+    &.active .top {
+        stroke-dasharray: 17 82;
+        stroke-dashoffset: -62px;
+    }
+    &.active .middle {
+        stroke-dashoffset: 23px;
+    }
+    &.active .bottom {
+        stroke-dashoffset: -83px;
+    }
+    &.active {
+        transform: rotate(45deg);
+    }
+}
+
+
+// Utilities
+.block {
+    display: block;
+}
+.text-center {
+    text-align: center;
+}
+.primary {
+    color: $primary;
+}
