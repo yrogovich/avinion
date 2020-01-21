@@ -6,6 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Студия красоты «АВИНЬОН»</title>
 
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- /.favicon -->
+
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> -->
@@ -14,14 +34,154 @@
 </head>
 <body>
     
+    <div class="navbar">
+        <div class="container">
+            <navbar class="navbar__row">
+                <a href="index.html" class="logo">
+                    <img class="logo__img" src="img/logo.png" alt="Avinion studio">
+                    <span class="logo__text">Студия красоты в Куркино</span>
+                    <!-- /.logo__text -->
+                </a> 
+                <!-- /.logo -->
 
+                <ul class="menu">
+                    <li>
+                        <a href="#">                                
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.5 4.75C7.40461 4.75 5.7 6.45462 5.7 8.55C5.7 10.6454 7.40461 12.35 9.5 12.35C11.5954 12.35 13.3 10.6454 13.3 8.55C13.3 6.45462 11.5954 4.75 9.5 4.75Z" />
+                                <path d="M17.4803 3.16667H14.781L13.5144 0H5.48562L4.21895 3.16667H3.8V1.58333H1.9V3.16667H1.51968C0.681467 3.16667 0 3.84813 0 4.68635V13.9862C0 14.8301 0.686533 15.5167 1.53045 15.5167H17.4695C18.3135 15.5167 19 14.8301 19 13.9862V4.68635C19 3.84813 18.3185 3.16667 17.4803 3.16667ZM3.16667 3.16667H2.53333V2.21667H3.16667V3.16667ZM9.5 14.25C6.35708 14.25 3.8 11.6929 3.8 8.55C3.8 5.40708 6.35708 2.85 9.5 2.85C12.6429 2.85 15.2 5.40708 15.2 8.55C15.2 11.6929 12.6429 14.25 9.5 14.25ZM16.4667 6.96667C15.7681 6.96667 15.2 6.39857 15.2 5.7C15.2 5.00143 15.7681 4.43333 16.4667 4.43333C17.1652 4.43333 17.7333 5.00143 17.7333 5.7C17.7333 6.39857 17.1652 6.96667 16.4667 6.96667Z"/>
+                            </svg>
+                            <span class="text">Фото работ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.8407 13.9091H13.1362C11.4319 13.9091 10.0453 12.5225 10.0453 10.8183C10.0453 9.114 11.4319 7.72742 13.1362 7.72742H15.8407C16.0542 7.72742 16.227 7.55461 16.227 7.34105V6.18198C16.227 5.37179 15.5986 4.71289 14.8046 4.649L12.5857 0.773352C12.3801 0.414909 12.048 0.158718 11.6507 0.052337C11.2553 -0.0533197 10.8418 0.00217091 10.4879 0.20816L2.88138 4.63654H1.54544C0.693125 4.63654 0 5.32963 0 6.18198V15.4546C0 16.3069 0.693089 17 1.54544 17H14.6816C15.5339 17 16.227 16.3069 16.227 15.4546V14.2955C16.227 14.0819 16.0542 13.9091 15.8407 13.9091ZM13.0649 3.16611L13.9067 4.63654H10.5392L13.0649 3.16611ZM4.41715 4.63654L10.8769 0.875966C11.0516 0.773714 11.2557 0.746549 11.4508 0.798635C11.6481 0.851445 11.8126 0.978979 11.9149 1.15744L11.9157 1.15885L5.94245 4.63654H4.41715Z" />
+                                <path d="M15.8398 8.5H13.1353C11.857 8.5 10.8171 9.53983 10.8171 10.8181C10.8171 12.0965 11.857 13.1363 13.1353 13.1363H15.8398C16.479 13.1363 16.9989 12.6164 16.9989 11.9772V9.65907C16.9989 9.01992 16.479 8.5 15.8398 8.5ZM13.1353 11.5908C12.7093 11.5908 12.3626 11.2441 12.3626 10.8181C12.3626 10.3922 12.7093 10.0454 13.1353 10.0454C13.5612 10.0454 13.908 10.3922 13.908 10.8181C13.908 11.2441 13.5613 11.5908 13.1353 11.5908Z" />
+                            </svg>
+                            <span class="text">Цены</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.4914 11.301C19.7177 10.9543 19.9992 10.5229 19.9992 10.0004C19.9992 9.47729 19.7177 9.0459 19.4914 8.69888C19.3646 8.50514 19.2333 8.30436 19.2069 8.16906C19.1777 8.02109 19.2232 7.77782 19.2672 7.54252C19.346 7.12082 19.4356 6.64255 19.2408 6.17226C19.0427 5.69462 18.6371 5.4176 18.2793 5.17339C18.0854 5.0409 17.8846 4.90356 17.8051 4.78497C17.7235 4.66326 17.6729 4.42311 17.6235 4.19077C17.5346 3.76938 17.4335 3.29175 17.0712 2.92895C16.7087 2.56646 16.2306 2.46537 15.8092 2.37631C15.5772 2.32725 15.3372 2.27647 15.2155 2.19538C15.0966 2.11539 14.9597 1.91461 14.8274 1.72087C14.5832 1.36292 14.3062 0.957306 13.8282 0.759345C13.6385 0.680598 13.4326 0.642162 13.1982 0.642162C12.9404 0.642162 12.6951 0.688254 12.4581 0.732471C12.2672 0.768251 12.0869 0.801687 11.9425 0.801687C11.8997 0.801687 11.8623 0.798563 11.8317 0.792781C11.6964 0.765595 11.4956 0.634663 11.3013 0.508105C10.9546 0.28202 10.5232 0 10.0002 0C9.47729 0 9.0459 0.28202 8.69919 0.508105C8.50498 0.634819 8.30421 0.765595 8.16906 0.792781C8.13843 0.798563 8.10078 0.801687 8.05797 0.801687C7.9136 0.801687 7.73329 0.768095 7.54236 0.732471C7.30487 0.688254 7.06004 0.642162 6.80223 0.642162C6.56787 0.642162 6.36163 0.680911 6.17257 0.759345C5.69462 0.957463 5.41776 1.36292 5.17324 1.72056C5.04058 1.91461 4.9034 2.11539 4.78497 2.19507C4.66341 2.27647 4.42342 2.32725 4.19124 2.37631C3.76954 2.46537 3.29175 2.56646 2.92926 2.92895C2.56693 3.29143 2.46553 3.76938 2.37663 4.19077C2.32757 4.42295 2.27663 4.66279 2.19507 4.78466C2.11554 4.9034 1.91508 5.04074 1.72087 5.17308C1.36292 5.41744 0.95715 5.69478 0.759345 6.1721C0.564197 6.6424 0.653568 7.1205 0.732315 7.54236C0.776376 7.77798 0.821687 8.02109 0.792625 8.1689C0.765908 8.30436 0.634975 8.50514 0.508105 8.69935C0.281864 9.0459 0 9.47729 0 10.0004C0 10.5229 0.281864 10.9543 0.508105 11.301C0.634975 11.4953 0.765908 11.6961 0.792625 11.8316C0.821999 11.9792 0.776376 12.2228 0.732628 12.4581C0.653881 12.8801 0.564509 13.3581 0.759345 13.8281C0.957463 14.306 1.36307 14.5827 1.72087 14.8272C1.91477 14.9597 2.11554 15.0968 2.19507 15.2157C2.27663 15.3374 2.32725 15.5772 2.37663 15.8092C2.46553 16.2309 2.56662 16.7089 2.92895 17.0714C3.29143 17.4335 3.76954 17.5349 4.19124 17.624C4.42326 17.6731 4.6631 17.7235 4.78434 17.8049C4.90356 17.8846 5.04043 18.0854 5.17324 18.2798C5.41729 18.6374 5.694 19.043 6.17163 19.2413C6.36131 19.3197 6.56756 19.3578 6.80161 19.3578C7.05941 19.3578 7.30471 19.3121 7.54174 19.2678C7.73298 19.2321 7.91328 19.1983 8.05765 19.1983C8.10046 19.1983 8.13812 19.2014 8.16874 19.2078C8.30374 19.2344 8.50451 19.3653 8.69888 19.4922C9.04558 19.7186 9.47697 20 9.99992 20C10.5229 20 10.9543 19.7186 11.301 19.4922C11.4952 19.3653 11.6959 19.2344 11.8314 19.2078C11.862 19.2014 11.8994 19.1983 11.9422 19.1983C12.0866 19.1983 12.2669 19.2322 12.4578 19.2678C12.695 19.3124 12.9401 19.3578 13.1979 19.3578C13.4323 19.3578 13.6382 19.3197 13.8279 19.2413C14.3055 19.0428 14.5824 18.6377 14.8266 18.2798C14.9593 18.0854 15.0964 17.8843 15.2149 17.8049C15.3364 17.7235 15.5764 17.6731 15.8083 17.624C16.23 17.5349 16.7084 17.4335 17.0709 17.0711C17.4329 16.7086 17.5343 16.2309 17.6229 15.8089C17.6723 15.5774 17.7229 15.3369 17.8045 15.2153C17.884 15.0963 18.0848 14.9593 18.279 14.8266C18.6365 14.5826 19.0422 14.3057 19.2402 13.8284C19.435 13.3581 19.3456 12.88 19.2669 12.4581C19.2228 12.2228 19.1775 11.9794 19.2066 11.8313C19.2333 11.6961 19.3646 11.4953 19.4914 11.301ZM4.61466 7.05644C4.61466 5.70525 5.71431 4.6056 7.06582 4.6056C8.41701 4.6056 9.51682 5.70509 9.51682 7.05644C9.51682 8.40795 8.41717 9.50775 7.06582 9.50775C5.71431 9.50791 4.61466 8.40811 4.61466 7.05644ZM6.32069 14.5913C6.19695 14.7152 6.03398 14.7774 5.87133 14.7774C5.70868 14.7774 5.54603 14.7152 5.42198 14.5913C5.1737 14.3432 5.1737 13.9407 5.42198 13.6923L13.7045 5.40979C13.9526 5.16136 14.3551 5.16136 14.6033 5.40979C14.8516 5.6579 14.8516 6.06039 14.6033 6.3085L6.32069 14.5913ZM12.9462 15.3874C11.5947 15.3874 10.4951 14.2879 10.4951 12.9365C10.4951 11.585 11.5947 10.4852 12.9462 10.4852C14.2974 10.4852 15.3972 11.585 15.3972 12.9365C15.3972 14.2879 14.2976 15.3874 12.9462 15.3874Z"/>
+                                <path d="M12.9459 11.7603C12.2955 11.7603 11.766 12.2898 11.766 12.9404C11.766 13.591 12.2955 14.1202 12.9459 14.1202C13.5965 14.1202 14.1257 13.591 14.1257 12.9404C14.1257 12.2898 13.5965 11.7603 12.9459 11.7603Z"/>
+                                <path d="M7.0657 5.88062C6.41525 5.88062 5.88574 6.40981 5.88574 7.0601C5.88574 7.71086 6.41525 8.24021 7.0657 8.24021C7.71614 8.24021 8.24549 7.7107 8.24549 7.0601C8.24549 6.40981 7.71614 5.88062 7.0657 5.88062Z"/>
+                            </svg>
+                            <span class="text">Акции</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="info-block">
+                    <span class="small">Запись по телефону:</span>
+                    <a href="tel:+79779705848" class="phone-link">+7 (977) 970-58-48</a>
+                    <a data-fancybox data-src="#call-me-modal" href="javascript:;" class="link">Перезвоните мне</a>
+                </div>
+                <!-- /.info-block -->
+            </navbar>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.navbar -->
+
+    <header>
+        <div class="overlay"></div>
+        <!-- /.overlay -->
+        <div class="container">
+            <div class="row">
+                <div class="column-left">
+                    <h1>Студия красоты «АВИНЬОН»</h1>
+                    <ul class="primary-ul">
+                        <li>В центре Куркино</li>
+                        <li>Приятные цены</li>
+                        <li>Опытные мастера</li>
+                    </ul>
+        
+                    <a class="social-links">
+                        <div class="svg-text with-arrow">
+                            <object type="image/svg+xml" data="img/header/social-title.svg" class="with-arrow"></object>
+                        </div>
+                        <!-- /.svg-text -->
+                        <a class="social-links__link" href="#">
+                            <img src="img/icons/inst.svg" alt="instagram">
+                        </a>
+                        <!-- /.link -->
+                        <a class="social-links__link" href="#">
+                            <img src="img/icons/vk.svg" alt="vk">
+                        </a>
+                        <!-- /.link -->
+                    </a>
+                    <!-- /.social-links -->
+                </div>
+                <!-- /.column-left -->
+                <div class="column-right">
+                    <div class="main-card">
+                        <div class="unset-skew">
+                            <div class="body">
+                                <div id="lottie-smile"></div>
+                                <!-- /#lottie-smile -->
+
+                                <div class="title">
+                                    <span class="primary">Скидка до 37%</span> 
+                                    на первую запись
+                                </div>
+                                <!-- /.title -->
+                                <a href="#" target="_blank" class="btn icon-plane">Онлайн запись</a>
+                                <a href="#" target="_blank" class="btn icon-whatsapp">Запись через WhatsApp</a>
+                            </div>
+                            <!-- /.body -->
+                            <div class="foot">
+                                <span class="small">Запись по телефону:</span>
+                                <a href="tel:+79779705848" class="phone-link">+7 (977) 970-58-48</a>
+                            </div>
+                            <!-- /.foot -->
+                        </div>
+                        <!-- /.unset-skew -->
+                    </div>
+                    <!-- /.main-card -->
+                </div>
+                <!-- /.column-right -->
+            </div>
+            <!-- /.row -->
+            
+        </div>
+        <!-- /.container -->
+    </header>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie_svg.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.5.9/lottie_light.min.js"></script> -->
     <script src="js/script.js"></script>
     <!-- /.Scripts -->
+
+    <!-- Modal HTML embedded directly into document -->
+    <div id="call-me-modal" class="modal"> 
+        <div class="content">
+            <div class="h2">Как с вами связаться?</div>
+            <form id="call-me-form" class="open-form" action="javascript:" onsubmit="callHandler('#call-me-form')">
+                <input type="hidden" name="form_name" value="Перезвоните мне">
+
+                <div class="input-wrapper">
+                    <input type="text" name="user_first_name" placeholder="Имя" required>
+                </div>
+                <!-- /.input-wrapper -->
+                <div class="input-wrapper">
+                    <input type="text" name="user_phone" placeholder="Телефон" required>
+                </div>
+                <!-- /.input-wrapper -->
+
+                <button class="btn">Свяжитесь со мной</button>
+            </form>
+        </div>
+        <!-- /.content --> 
+    </div>
 </body>
 </html>
