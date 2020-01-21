@@ -23,6 +23,12 @@ $(function() {
         smileAnimation.goToAndPlay(7000);
     }
 
+    $('.lazy').Lazy();
+    
+    //AOS
+    AOS.init({
+        duration: 1000, 
+    });
 
     function callHandler(form) {
         console.log('form func is running');
