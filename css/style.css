@@ -1983,6 +1983,7 @@ ul.list li:first-child {
   }
   .modal .content {
     min-height: 20rem;
+    margin: auto;
   }
 }
 
