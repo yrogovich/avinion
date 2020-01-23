@@ -7,7 +7,7 @@ $(function() {
             renderer: 'svg',
             loop: false,
             autoplay: true,
-            path: 'json/smile.json'
+            path: 'JSON/smile.json'
         });
 
         setTimeout(function() {
@@ -50,7 +50,7 @@ $(function() {
                 loop: true,
                 autoplay: true,
                 speed: 2,
-                path: 'json/eye.json'
+                path: 'JSON/eye.json'
             });
             eyeAnimation.setSpeed(1.5);
         }
