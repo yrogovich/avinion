@@ -251,6 +251,19 @@ img {
   color: transparent;
 }
 
+::-moz-selection {
+  background: #ffb7b7;
+}
+
+::selection {
+  background: #ffb7b7;
+}
+
+::-moz-selection {
+  background: #ffb7b7;
+  /* Firefox */
+}
+
 [data-aos="h2-animation"]:before, [data-aos="h2-animation"]:after {
   content: '';
   display: inline-block;

@@ -175,6 +175,14 @@ h3,
 img {
     color: transparent;
 }
+
+::selection {
+    background: #ffb7b7;
+}
+::-moz-selection {
+    background: #ffb7b7; /* Firefox */
+}
+
 // AOS Custom animations
 [data-aos="h2-animation"] {
     &:before,
