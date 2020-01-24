@@ -112,6 +112,7 @@ body {
   font-size: 1.6rem;
   margin: 0;
   color: #4C4C54;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 960px) {
@@ -1602,6 +1603,7 @@ ul.list li:first-child {
 }
 
 #footer {
+  overflow: hidden;
   position: relative;
   padding: 6rem 0 5rem;
 }
@@ -1866,6 +1868,9 @@ ul.list li:first-child {
 @media screen and (max-width: 780px) {
   .youtube {
     margin-bottom: 3rem;
+  }
+  .youtube .label {
+    display: none;
   }
 }
 

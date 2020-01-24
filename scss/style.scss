@@ -83,6 +83,7 @@ body {
     font-size: 1.6rem;
     margin: 0; 
     color: $black;
+    overflow-x: hidden;
     @include md-block() {
         margin-bottom: 5rem;
     }
@@ -1143,6 +1144,8 @@ ul.list {
     }
 }
 #footer {
+    overflow: hidden;
+
     position: relative;
     padding: 6rem 0 5rem;
     .main-card {
@@ -1345,6 +1348,9 @@ ul.list {
     }
     @include sm-block() {
         margin-bottom: 3rem;
+        .label {
+            display: none;
+        }
     }
     @keyframes scaling {
         from {
