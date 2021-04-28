@@ -1297,6 +1297,7 @@ ul.list {
             transform: translateX(6px);
             cursor: pointer;
             transition: .2s ease-in-out;
+            max-width: 90%;
         }
         @include sm-block() {
             width: 8rem;
